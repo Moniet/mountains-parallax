@@ -4,8 +4,12 @@ import './Illustration.css'
 export default class Illustration extends React.Component {
 
     componentDidMount() {
-      const birds = document.querySelector('#birds')
-      // const birds = document.querySelector('#')
+      // const els = document.querySelectorAll('.parallax');
+      const clouds = document.querySelectorAll('#clouds');
+      // const pos = clouds.getBoundingClientRect();
+      console.log(clouds)
+
+      // clouds.style.
     }
     
     render() {
@@ -14,11 +18,11 @@ export default class Illustration extends React.Component {
             <svg
               viewBox="0 0 500 500"
               xmlns="http://www.w3.org/2000/svg"
-              fill-rule="evenodd"
-              clip-rule="evenodd"
-              stroke-linecap="square"
-              stroke-linejoin="round"
-              stroke-miterlimit="1.5"
+              fillRule="evenodd"
+              clipRule="evenodd"
+              strokeLinecap="square"
+              strokeLinejoin="round"
+              strokeMiterlimit="1.5"
             >
               <path
                 id="background"
@@ -26,18 +30,18 @@ export default class Illustration extends React.Component {
                 fill="#deebff"
               />
               <g fill="none" stroke="#000" id="trees">
-                <g stroke-width=".55">
+                <g strokeWidth=".55">
                   <path d="M182.209 332.258s1.299.197 1.335-.826c.067-1.145-.407 1.364 1.471.826M182.209 330.606s1.299.198 1.335-.825c.067-1.146-.407 1.364 1.471.825M182.209 328.955s1.299.197 1.335-.826c.067-1.146-.407 1.364 1.471.826M182.209 327.303s1.299.197 1.335-.826c.067-1.145-.407 1.364 1.471.826M182.209 325.652s1.29-.042 1.335-1.239c.067-1.146-.42 1.221 1.471 1.239M183.544 324v9.287" />
                 </g>
-                <g stroke-width=".7">
+                <g strokeWidth=".7">
                   <path d="M274 358.784s1.998.303 2.054-1.271c.103-1.762-.625 2.099 2.263 1.271M274 356.243s1.998.303 2.054-1.27c.103-1.763-.625 2.098 2.263 1.27M274 353.702s1.998.303 2.054-1.27c.103-1.763-.625 2.098 2.263 1.27M274 351.161s1.998.304 2.054-1.27c.103-1.763-.625 2.098 2.263 1.27M274 348.62s1.985-.063 2.054-1.905c.103-1.763-.646 1.878 2.263 1.905M276.054 346.08v14.286" />
                 </g>
-                <g stroke-width=".2">
+                <g strokeWidth=".2">
                   <path d="M221.503 304.402s.68.103.699-.433c.035-.599-.213.714.77.433M221.503 303.537s.68.103.699-.432c.035-.6-.213.714.77.432M221.503 302.673s.68.103.699-.432c.035-.6-.213.713.77.432M221.503 301.808s.68.104.699-.432c.035-.599-.213.714.77.432M221.503 300.944s.676-.022.699-.648c.035-.6-.22.639.77.648M222.202 300.08v4.86" />
                 </g>
                 <path
                   d="M225 426.095s2.418.367 2.485-1.537c.124-2.133-.756 2.539 2.739 1.537M225 423.02s2.418.367 2.485-1.537c.124-2.132-.756 2.539 2.739 1.537M225 419.946s2.418.367 2.485-1.537c.124-2.133-.756 2.539 2.739 1.537M225 416.872s2.418.367 2.485-1.538c.124-2.132-.756 2.539 2.739 1.538M225 413.797s2.402-.077 2.485-2.306c.124-2.132-.782 2.273 2.739 2.306"
-                  stroke-width=".95"
+                  strokeWidth=".95"
                 />
                 <path d="M227.485 410.723v17.286" />
               </g>
@@ -61,30 +65,30 @@ export default class Illustration extends React.Component {
                 d="M196.474 260.853l-13.346 7.537-5.25 5.533"
                 fill="none"
                 stroke="#3d3d3d"
-                stroke-width="2.5"
-                stroke-linecap="round"
+                strokeWidth="2.5"
+                strokeLinecap="round"
               />
               <g
                 fill="none"
                 stroke="#3d3d3d"
-                stroke-width="2.5"
-                stroke-linecap="round"
+                strokeWidth="2.5"
+                strokeLinecap="round"
               >
                 <path d="M324.2 202.105l-5.63 14.109 6.767 5.425-7.436 9.681 15.402 13.843-7.331 5.896-3.228 6.501M322.744 257.56l-7.215 4.685M333.303 245.163l7.486 11.773 20.847 3.927" />
               </g>
               <g
                 fill="none"
                 stroke="#3d3d3d"
-                stroke-width="2.5"
-                stroke-linecap="round"
+                strokeWidth="2.5"
+                strokeLinecap="round"
               >
                 <path d="M135.542 235.398l-8.606 13.485 6.772 5.305-3.228 5.073 7.744 5.958M130.319 259.575l-2.393 1.279-5.738 1.832-9.257 8.599M118.103 267.51l3.431 9.922" />
               </g>
               <g
                 fill="none"
                 stroke="#000"
-                stroke-width="2"
-                stroke-linecap="round"
+                strokeWidth="2"
+                strokeLinecap="round"
                 className="road"
               >
                 <path d="M194 300.761s-20.524 3.698 1 19.239 58.907 31.436 36 43c-22.907 11.564-48.826 19.568-8 35 40.826 15.432 58.84 28.265 23.821 35" />
@@ -139,8 +143,8 @@ export default class Illustration extends React.Component {
               <g
                 fill="none"
                 stroke="#000"
-                stroke-width=".5"
-                stroke-linecap="round"
+                strokeWidth=".5"
+                strokeLinecap="round"
                 id="birds"
                 className="parallax"
               >
