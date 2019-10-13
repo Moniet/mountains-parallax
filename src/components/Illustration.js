@@ -1,15 +1,18 @@
 import React from 'react'
 import './Illustration.css'
+import { parallax } from '../lib/parallax'
 
 export default class Illustration extends React.Component {
 
     componentDidMount() {
-      // const els = document.querySelectorAll('.parallax');
-      const clouds = document.querySelectorAll('#clouds');
-      // const pos = clouds.getBoundingClientRect();
-      console.log(clouds)
-
-      // clouds.style.
+      const container = document.querySelector('#background')
+      const clouds = document.querySelector('#clouds')
+      const birds = document.querySelector('#birds')
+      const sun = document.querySelector('#sun')
+      parallax(container, clouds, 20);
+      parallax(container, sun, 200);
+      parallax(container, birds, 80);
+      
     }
     
     render() {
@@ -45,7 +48,7 @@ export default class Illustration extends React.Component {
                 />
                 <path d="M227.485 410.723v17.286" />
               </g>
-              <g id="sun">
+              <g id="sun" className="parallax">
               <path
                 d="M156.625 179.182c.087 0-.173.001-.087.003 6.46.137 12.007 5.425 12.007 11.917 0 6.579-5.341 11.92-11.92 11.92-6.578 0-11.92-5.341-11.92-11.92s5.342-11.92 11.92-11.92z"
                 fill="#fffcaf"
