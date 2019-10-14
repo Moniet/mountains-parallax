@@ -5,7 +5,7 @@ import { parallax } from '../lib/parallax'
 export default class Illustration extends React.Component {
 
     componentDidMount() {
-      const container = document.querySelector('#background')
+      const container = document.querySelector('#svg-container')
       const clouds = document.querySelector('#clouds')
       const birds = document.querySelector('#birds')
       const sun = document.querySelector('#sun')
@@ -26,6 +26,7 @@ export default class Illustration extends React.Component {
               strokeLinecap="square"
               strokeLinejoin="round"
               strokeMiterlimit="1.5"
+              id="svg-container"
             >
               <path
                 id="background"

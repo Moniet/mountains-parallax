@@ -7,5 +7,6 @@
 }
 
 .parallax {
-    transition: transform 500ms;  
+    transition: transform 400ms ease-in-out;  
+    /* transition-delay: 100s; */
 }
