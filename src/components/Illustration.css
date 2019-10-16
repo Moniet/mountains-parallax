@@ -1,12 +1,12 @@
 .illustration-container {
-    width: 800px;
+	width: 800px;
 }
 
 .illustration-container svg {
-    width: 100%;
+	width: 100%;
 }
 
 .parallax {
-    transition: transform 400ms ease-in-out;  
-    /* transition-delay: 100s; */
+	transition: transform 600ms ease;
+	/* transition-delay: 100s; */
 }
