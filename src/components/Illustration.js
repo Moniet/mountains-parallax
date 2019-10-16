@@ -3,14 +3,21 @@ import './Illustration.css'
 import { parallax } from '../lib/parallax'
 
 export default class Illustration extends React.Component {
+	constructor() {
+		super()
+		this.container = React.createRef()
+		this.clouds = React.createRef()
+		this.sun = React.createRef()
+		this.birds = React.createRef()
+	}
+
 	componentDidMount() {
-		const container = document.querySelector('#svg-container')
 		const clouds = document.querySelector('#clouds')
 		const birds = document.querySelector('#birds')
 		const sun = document.querySelector('#sun')
-		parallax(container, clouds, 40)
-		parallax(container, sun, 160)
-		parallax(container, birds, 100)
+		parallax(this.container.current, clouds, 40)
+		parallax(this.container.current, sun, 160)
+		parallax(this.container.current, birds, 100)
 	}
 
 	render() {
@@ -25,6 +32,7 @@ export default class Illustration extends React.Component {
 					strokeLinejoin="round"
 					strokeMiterlimit="1.5"
 					id="svg-container"
+					ref={this.container}
 				>
 					<path
 						id="background"
@@ -47,7 +55,7 @@ export default class Illustration extends React.Component {
 						/>
 						<path d="M227.485 410.723v17.286" />
 					</g>
-					<g id="sun" className="parallax">
+					<g id="sun" className="parallax" ref={this.sun}>
 						<path
 							d="M156.625 179.182c.087 0-.173.001-.087.003 6.46.137 12.007 5.425 12.007 11.917 0 6.579-5.341 11.92-11.92 11.92-6.578 0-11.92-5.341-11.92-11.92s5.342-11.92 11.92-11.92z"
 							fill="#fffcaf"
@@ -98,7 +106,7 @@ export default class Illustration extends React.Component {
 						<path d="M194 300.761s-20.524 3.698 1 19.239 58.907 31.436 36 43c-22.907 11.564-48.826 19.568-8 35 40.826 15.432 58.84 28.265 23.821 35" />
 						<path d="M301 436c3.788-1.741 24.599-9.498 5.823-23.824-12.088-9.223-64.236-28.814-64.766-29.176-10.097-6.901 18.879-12.058 18.378-26.12-.501-14.061-27.495-23.158-46.368-33.88-24.606-13.979-24.249-15.077-6.067-22.239" />
 					</g>
-					<g fill="#fff" id="clouds" className="parallax">
+					<g fill="#fff" id="clouds" className="parallax" ref={this.clouds}>
 						<ellipse cx="263.96" cy="204.364" rx="5.96" ry="4.347" />
 						<circle cx="268.42" cy="200.477" r="4.46" />
 						<circle cx="273.258" cy="203.355" r="3.338" />
@@ -151,6 +159,7 @@ export default class Illustration extends React.Component {
 						strokeLinecap="round"
 						id="birds"
 						className="parallax"
+						ref={this.birds}
 					>
 						<path d="M139.855 160.322c1.432.059 2.512.673 3.333 1.692.318-1.302 1.293-2.119 2.581-2.705M123.986 161.648c1.132.383 1.852 1.126 2.271 2.133.559-.967 1.529-1.392 2.696-1.56M124 143c.234.05.394.181.5.372.089-.205.272-.312.5-.372M127 147c.234.058.394.209.5.429.089-.237.272-.36.5-.429M131.719 155.937c.319.091.537.33.682.677.121-.373.371-.568.682-.677M125.292 142a.29.29 0 01.196.161c.034-.089.106-.135.195-.161M127.873 143.437a.288.288 0 01.195.161c.035-.089.107-.135.196-.161M126.169 141.185a.284.284 0 01.196.161c.034-.089.106-.135.195-.161M126.076 143.394c.166.036.279.13.354.268.063-.148.193-.225.354-.268M124.155 144.423c.258.087.435.313.553.64.098-.352.3-.536.552-.64M127 142c.234.05.394.181.5.372.089-.205.272-.312.5-.372M129.25 144.145c.35.075.591.272.75.557.133-.307.408-.467.75-.557M124.708 148.487c1.002.215 1.69.778 2.146 1.596.381-.88 1.167-1.339 2.146-1.596M125.385 154.271c1.003.215 1.69.778 2.146 1.595.382-.88 1.168-1.338 2.146-1.595M124.667 157.604c.99.267 1.647.865 2.06 1.705.427-.858 1.236-1.275 2.226-1.481M132.599 154.277c1.261.094 2.195.667 2.889 1.589.318-1.138 1.202-1.83 2.354-2.309M131.736 158.51c1.003.215 1.69.778 2.146 1.595.382-.879 1.168-1.338 2.146-1.595M126 144.743c.467.101.787.363 1 .744.178-.41.544-.624 1-.744M130.5 148.974c.467.1.787.363 1 .743.178-.409.544-.623 1-.743M130.033 152.13c.468.1.788.362 1 .743.178-.41.544-.623 1-.743M137.193 158.234c.714.062 1.239.394 1.626.922.188-.644.694-1.029 1.351-1.292M126.385 151.238c.701.151 1.181.544 1.5 1.116.267-.615.816-.936 1.5-1.116M132.912 150.984c.818.202 1.378.732 1.75 1.5.311-.827.952-1.258 1.75-1.5M132.662 161.853c1.051.259 1.772.94 2.25 1.928.4-1.063 1.224-1.617 2.25-1.928M123.708 145.929c.467.101.787.363 1 .744.177-.41.544-.624 1-.744M129 145.743c.701.151 1.181.544 1.5 1.116.267-.615.816-.936 1.5-1.116" />
 					</g>
