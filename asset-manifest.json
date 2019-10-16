@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/svg-mountains-parallax/static/css/main.7cfe6aea.chunk.css",
-    "main.js": "/svg-mountains-parallax/static/js/main.f11d9ef2.chunk.js",
-    "main.js.map": "/svg-mountains-parallax/static/js/main.f11d9ef2.chunk.js.map",
-    "runtime-main.js": "/svg-mountains-parallax/static/js/runtime-main.57f4e2a2.js",
-    "runtime-main.js.map": "/svg-mountains-parallax/static/js/runtime-main.57f4e2a2.js.map",
-    "static/js/2.de66b321.chunk.js": "/svg-mountains-parallax/static/js/2.de66b321.chunk.js",
-    "static/js/2.de66b321.chunk.js.map": "/svg-mountains-parallax/static/js/2.de66b321.chunk.js.map",
-    "index.html": "/svg-mountains-parallax/index.html",
-    "precache-manifest.c1222a4d224b94b9293b153c54b29929.js": "/svg-mountains-parallax/precache-manifest.c1222a4d224b94b9293b153c54b29929.js",
-    "service-worker.js": "/svg-mountains-parallax/service-worker.js",
-    "static/css/main.7cfe6aea.chunk.css.map": "/svg-mountains-parallax/static/css/main.7cfe6aea.chunk.css.map",
-    "static/media/logo.svg": "/svg-mountains-parallax/static/media/logo.25bf045c.svg"
+    "main.css": "/mountains-parallax/static/css/main.7cfe6aea.chunk.css",
+    "main.js": "/mountains-parallax/static/js/main.c2f9f073.chunk.js",
+    "main.js.map": "/mountains-parallax/static/js/main.c2f9f073.chunk.js.map",
+    "runtime-main.js": "/mountains-parallax/static/js/runtime-main.c9949898.js",
+    "runtime-main.js.map": "/mountains-parallax/static/js/runtime-main.c9949898.js.map",
+    "static/js/2.de66b321.chunk.js": "/mountains-parallax/static/js/2.de66b321.chunk.js",
+    "static/js/2.de66b321.chunk.js.map": "/mountains-parallax/static/js/2.de66b321.chunk.js.map",
+    "index.html": "/mountains-parallax/index.html",
+    "precache-manifest.17c39b96523917478037d425b34db9b6.js": "/mountains-parallax/precache-manifest.17c39b96523917478037d425b34db9b6.js",
+    "service-worker.js": "/mountains-parallax/service-worker.js",
+    "static/css/main.7cfe6aea.chunk.css.map": "/mountains-parallax/static/css/main.7cfe6aea.chunk.css.map",
+    "static/media/logo.svg": "/mountains-parallax/static/media/logo.25bf045c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.57f4e2a2.js",
+    "static/js/runtime-main.c9949898.js",
     "static/js/2.de66b321.chunk.js",
     "static/css/main.7cfe6aea.chunk.css",
-    "static/js/main.f11d9ef2.chunk.js"
+    "static/js/main.c2f9f073.chunk.js"
   ]
 }
